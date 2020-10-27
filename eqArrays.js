@@ -10,10 +10,10 @@ const assertEqual = function(actual, expected) {
 
 const eqArrays = function(arr1, arr2)  {
   let index = 0;
-  for (let digit in arr1){
+  for (let digit in arr1) {
 
-    if (arr1[digit] === arr2[index]){
-      index++
+    if (arr1[digit] === arr2[index]) {
+      index ++;
 
     } else {
       return false;
@@ -22,3 +22,6 @@ const eqArrays = function(arr1, arr2)  {
   return true;
 };
 
+
+
+assertEqual(eqArrays([1, 2, '3'], [1, 2, '3']), true);
